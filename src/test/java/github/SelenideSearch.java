@@ -22,7 +22,6 @@ public class SelenideSearch {
         listOfRepositories.first().$("a").click();
         $("h1").should(text("selenide/selenide"));
         $("#wiki-tab").click();
-//        var listOfPages =
         $$(".markdown-body ul li").get(6).$("a").should(text("Soft assertions")).click();
         var listOfMechanisms = $$(".markdown-body ol li");
         listOfMechanisms.findBy(text("JUnit5 extension")).should(text("JUnit5"));
